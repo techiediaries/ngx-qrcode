@@ -3,7 +3,7 @@
 An Angular 4+ Component library for Generating QR (Quick Response ) Codes .
 
 ## Demo 
-A simple [demo](https://techiediaries.github.io/ngx-qrcode/demo/)
+A simple [demo](https://www.techiediaries.com/ngx-qrcode/demo/)
 
 
 ## Installation
@@ -15,31 +15,11 @@ $ npm install ngx-qrcode --save
 ```
 
 ## Usage
+For a complete and detailed tutorial on how to use this library .See  :
 
-Import the NgxQRCodeModule into your desired module:
+<a href="https://www.techiediaries.com/generate-qrcodes-angular">How to Generate QR Codes In Angular 4+ Applications </a>
 
-```typescript
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
-
-import { AppComponent } from './app.component';
-
-// Import ngx-barcode module
-import { NgxQRCodeModule } from 'ngx-barcode';
-
-@NgModule({
-  declarations: [
-    AppComponent
-  ],
-  imports: [
-    BrowserModule,
-    NgxQRCodeModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
-})
-export class AppModule { }
-```
+Import the NgxQRCodeModule from ngx-qrcode  into your app :
 
 Once the library is imported, you can use the ngx-qrcode component in your Angular application:
 
@@ -48,7 +28,7 @@ Once the library is imported, you can use the ngx-qrcode component in your Angul
 <h1>
   {{title}}
 </h1>
-<ngx-barcode [qrc-value]="value" ></ngx-barcode>
+<ngx-qrcode [qrc-value]="value" ></ngx-qrcode>
 ```
 
 ## Development
