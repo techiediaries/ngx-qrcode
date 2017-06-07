@@ -1,5 +1,5 @@
 {
-  "name": "ngx-barcode",
+  "name": "ngx-qrcode2",
   "version": "0.2.1",
   "scripts": {
     "build": "gulp build",

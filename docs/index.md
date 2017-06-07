@@ -1,67 +1,38 @@
 ---
-layout: default
-title: ngx-barcode
+layout: demo
+title: ngx-qrcode
 ---
-# ngx-barcode
+# ngx-qrcode
 
-An angular component for Angular 4+ for creating 1-D barcodes based on [Lindell's JsBarcode](https://github.com/lindell/JsBarcode).
+An Angular 4+ Component library for Generating QR (Quick Response ) Codes .
 
 ## Demo 
-A simple [demo](demo/)
+A simple [demo](https://www.techiediaries.com/ngx-qrcode/demo/)
 
-## Features
-- supports all barcode formats provided by JsBarcode
-  - CODE128
-  - EAN
-  - CODE39
-  - ITF-14
-  - MSI
-  - Pharmacode
-  - Codabar
 
 ## Installation
 
-To use ngx-barcode in your project, install it via npm:
+To use ngx-qrcode in your project, install it via npm:
 
 ```bash
-$ npm install ngx-barcode --save
+$ npm install ngx-qrcode2 --save
 ```
 
 ## Usage
+For a complete and detailed tutorial on how to use this library .See  :
 
-Import the NgxBarcodeModule into your desired module:
+<a href="https://www.techiediaries.com/generate-qrcodes-angular">How to Generate QR Codes In Angular 4+ Applications </a>
 
-```typescript
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+Import the NgxQRCodeModule from ngx-qrcode  into your app :
 
-import { AppComponent } from './app.component';
-
-// Import ngx-barcode module
-import { NgxBarcodeModule } from 'ngx-barcode';
-
-@NgModule({
-  declarations: [
-    AppComponent
-  ],
-  imports: [
-    BrowserModule,
-    NgxBarcodeModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
-})
-export class AppModule { }
-```
-
-Once the library is imported, you can use the ngx-barcode component in your Angular application:
+Once the library is imported, you can use the ngx-qrcode component in your Angular application:
 
 ```xml
 <!-- Adding a barcode in app.component.html -->
 <h1>
   {{title}}
 </h1>
-<ngx-barcode [bc-value]="value" [bc-display-value]="true"></ngx-barcode>
+<ngx-qrcode [qrc-value]="value" ></ngx-qrcode>
 ```
 
 ## Development
@@ -80,4 +51,4 @@ $ npm run lint
 
 ## License
 
-MIT © [Bryon Williams](mailto:bryon.williams@live.com)
+MIT © [Techiediaries](mailto:techiediaries9@gmail.com)
