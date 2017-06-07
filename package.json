@@ -9,18 +9,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/yobryon/ngx-barcode"
+    "url": "https://github.com/techiediaries/ngx-qrcode"
   },
   "author": {
-    "name": "Bryon Williams",
-    "email": "bryon.williams@live.com"
+    "name": "Techiediaries",
+    "email": "techiediaries9@gmail.com"
   },
   "keywords": [
     "angular"
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/yobryon/ngx-barcode/issues"
+    "url": "https://github.com/techiediaries/ngx-qrcode/issues"
   },
   "devDependencies": {
     "@angular/common": "^4.0.0",
