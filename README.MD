@@ -24,9 +24,23 @@ Import the NgxQRCodeModule from ngx-qrcode  into your app :
 Once the library is imported, you can use the ngx-qrcode component in your Angular application:
 
 ```xml
-<!-- Adding a qrcode generator component in app.component.html -->
 
-<ngx-qrcode [qrc-value]="value" ></ngx-qrcode>
+      <ngx-qrcode 
+        [qrc-value] = "value"
+        qrc-class = "aclass"
+        qrc-errorCorrectionLevel = "L">
+        </ngx-qrcode>
+
+```
+You can also specify the QRCode version (1 to 40) explicitely 
+
+```xml
+
+      <ngx-qrcode 
+        qrc-element-type="url" 
+        [qrc-value] = "value"
+        qrc-version = "40"></ngx-qrcode>
+
 ```
 
 ## Development

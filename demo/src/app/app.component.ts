@@ -18,7 +18,9 @@ import { Component } from '@angular/core';
       <ngx-qrcode 
         [qrc-element-type]="elementType" 
         [qrc-value] = "value"
-      ></ngx-qrcode>
+        qrc-class = "aclass"
+        qrc-errorCorrectionLevel = "L">
+        </ngx-qrcode>
     </div>
   </div>
 
