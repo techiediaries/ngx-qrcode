@@ -11,7 +11,7 @@ A simple [demo](https://www.techiediaries.com/demos/ngx-qrcode/)
 To use ngx-qrcode in your project, install it via npm:
 
 ```bash
-$ npm install ngx-qrcode2 --save
+$ npm install @techiediaries/ngx-qrcode --save
 ```
 
 ## Usage
