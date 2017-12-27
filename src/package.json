@@ -1,6 +1,6 @@
 {
-  "name": "ngx-qrcode2",
-  "version": "0.0.4",
+  "name": "ngx-qrcode",
+  "version": "0.0.5",
   "description": "An Angular 4+ component for generating QRCodes ",
   "homepage": "https://www.techiediaries.com/ngx-qrcode",
   "repository": {
