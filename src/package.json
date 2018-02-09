@@ -1,6 +1,6 @@
 {
-  "name": "ngx-qrcode",
-  "version": "0.0.7",
+  "name": "@techiediaries/ngx-qrcode",
+  "version": "0.0.8",
   "description": "An Angular 4+ component for generating QRCodes ",
   "homepage": "https://www.techiediaries.com/ngx-qrcode",
   "repository": {
@@ -19,7 +19,7 @@
   "bugs": {
     "url": "https://github.com/techiediaries/ngx-qrcode/issues"
   },
-  "module": "index.js",
+  "module": "ngx-qrcode.js",
   "typings": "ngx-qrcode.d.ts",
   "peerDependencies": {
     "@angular/core": "^5.0.0",

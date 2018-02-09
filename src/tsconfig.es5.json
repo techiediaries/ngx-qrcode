@@ -24,7 +24,7 @@
     "strictMetadataEmit": true,
     "skipTemplateCodegen": true,
     "flatModuleOutFile": "ngx-qrcode.js",
-    "flatModuleId": "ngx-qrcode"
+    "flatModuleId": "@techiediaries/ngx-qrcode"
   },
   "files": [
     "./index.ts"
