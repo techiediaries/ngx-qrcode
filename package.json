@@ -1,5 +1,5 @@
 {
-  "name": "ngx-qrcode2",
+  "name": "@techiediaries/ngx-qrcode",
   "version": "0.2.1",
   "scripts": {
     "build": "gulp build",
@@ -9,12 +9,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/techiediaries/ngx-qrcode"
+    "url": "git+https://github.com/techiediaries/ngx-qrcode.git"
   },
-  "author": {
-    "name": "Techiediaries",
-    "email": "techiediaries9@gmail.com"
-  },
+  "author": "Techiediaries <techiediaries9@gmail.com>",
   "keywords": [
     "angular"
   ],
@@ -23,12 +20,12 @@
     "url": "https://github.com/techiediaries/ngx-qrcode/issues"
   },
   "devDependencies": {
-    "@angular/common": "^4.0.0",
-    "@angular/compiler": "^4.0.0",
-    "@angular/compiler-cli": "^4.0.0",
-    "@angular/core": "^4.0.0",
-    "@angular/platform-browser": "^4.0.0",
-    "@angular/platform-browser-dynamic": "^4.0.0",
+    "@angular/common": "^5.0.0",
+    "@angular/compiler": "^5.0.0",
+    "@angular/compiler-cli": "^5.0.0",
+    "@angular/core": "^5.0.0",
+    "@angular/platform-browser": "^5.0.0",
+    "@angular/platform-browser-dynamic": "^5.0.0",
     "@types/jasmine": "2.5.38",
     "@types/node": "~6.0.60",
     "codelyzer": "~2.0.0",
@@ -51,7 +48,7 @@
     "rxjs": "^5.1.0",
     "ts-node": "~2.0.0",
     "tslint": "~4.5.0",
-    "typescript": "~2.2.0",
+    "typescript": "~2.4.0",
     "zone.js": "^0.8.4"
   },
   "engines": {
@@ -59,5 +56,11 @@
   },
   "dependencies": {
     "qrcode": "^0.8.2"
+  },
+  "description": "An Angular 4+ Component library for Generating QR (Quick Response ) Codes .",
+  "homepage": "https://github.com/techiediaries/ngx-qrcode#readme",
+  "main": "gulpfile.js",
+  "directories": {
+    "doc": "docs"
   }
 }

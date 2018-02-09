@@ -6,7 +6,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FlexLayoutModule } from '@angular/flex-layout';
 
 import { AppComponent } from './app.component';
-import { NgxQRCodeModule } from 'ngx-qrcode2';
+import { NgxQRCodeModule } from 'ngx-qrcode';
 
 @NgModule({
   declarations: [
