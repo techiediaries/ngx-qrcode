@@ -23,8 +23,8 @@
     "annotateForClosureCompiler": true,
     "strictMetadataEmit": true,
     "skipTemplateCodegen": true,
-    "flatModuleOutFile": "ngx-qrcode2.js",
-    "flatModuleId": "ngx-qrcode2"
+    "flatModuleOutFile": "ngx-qrcode.js",
+    "flatModuleId": "ngx-qrcode"
   },
   "files": [
     "./index.ts"
