@@ -16,8 +16,11 @@ $ npm install @techiediaries/ngx-qrcode --save
 ## Usage
 For a complete and detailed tutorial on how to use this library .See  :
 
+[How to Generate QR Codes In Angular 4+ Applications ](https://www.techiediaries.com/generate-qrcodes-angular)
 
+```ts
 Import the NgxQRCodeModule from ngx-qrcode  into your app :
+```
 
 Once the library is imported, you can use the ngx-qrcode component in your Angular application:
 
