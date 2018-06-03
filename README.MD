@@ -46,27 +46,42 @@ export class AppModule { }
 ```
 
 
-Once the library is imported, you can use the ngx-qrcode component in your Angular application:
+Once the library is imported, you can use the ngx-qrcode component in your Angular application.
 
+In `app.component.html`, add:
 ```xml
 
-      <ngx-qrcode 
-        [qrc-value] = "value"
-        qrc-class = "aclass"
-        qrc-errorCorrectionLevel = "L">
-        </ngx-qrcode>
+<div style="text-align:center">
+  <h1>
+    ngx-qrcode2 demo 
+  </h1>
+</div>
+
+<ngx-qrcode 
+      [qrc-element-type]="elementType" 
+      [qrc-value] = "value"
+      qrc-class = "aclass"
+      qrc-errorCorrectionLevel = "L">
+</ngx-qrcode>
 
 ```
-You can also specify the QRCode version (1 to 40) explicitely 
+In `app.component.ts`, add:
 
-```xml
+```ts
+import { Component } from '@angular/core';
 
-      <ngx-qrcode 
-        qrc-element-type="url" 
-        [qrc-value] = "value"
-        qrc-version = "40"></ngx-qrcode>
-
+@Component({
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.css']
+})
+export class AppComponent {
+  title = 'app';
+  elementType = 'url';
+  value = 'Techiediaries';
+}
 ```
+
 
 ## How to develop ngx-qrcode2?
 
