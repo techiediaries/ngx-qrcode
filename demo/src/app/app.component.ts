@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+  elementType = 'url';
+  value = 'Techiediaries';
+  get values(): string[] {
+    return this.value.split('\n');
+} 
 }
