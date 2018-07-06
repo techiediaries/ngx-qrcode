@@ -58,7 +58,7 @@
     "node": ">=6.0.0"
   },
   "dependencies": {
-    "qrcode": "^0.8.2"
+    "qrcode": "^1.2.0"
   },
   "description": "An Angular 6 Component library for Generating QR (Quick Response ) Codes.",
   "homepage": "https://github.com/techiediaries/ngx-qrcode#readme",
