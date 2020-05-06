@@ -1,0 +1,6 @@
+{
+  "hooks": {
+    "pre-commit": "yarn lint",
+    "commit-msg": "commitlint --env HUSKY_GIT_PARAMS --extends \"@commitlint/config-angular\""
+  }
+}

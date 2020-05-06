@@ -65,9 +65,9 @@ In `app.component.html`, add:
 
 <ngx-qrcode 
   [elementType]="elementType" 
-  [value] = "value"
-  cssClass = "aclass"
-  errorCorrectionLevel = "L">
+  [value]="value"
+  cssClass="aclass"
+  errorCorrectionLevel="L">
 </ngx-qrcode>
 
 ```
@@ -88,6 +88,8 @@ export class AppComponent {
 }
 ```
 
+# Contributing
+Please see [Contributing Guidelines](.github/CONTRIBUTING.md).
 
 ## How to develop @techiediaries/ngx-qrcode?
 
@@ -127,11 +129,18 @@ or
 $ yarn lib:publish
 ```
 
+# Code of Conduct
+Please see [Code of Conduct](.github/CODE_OF_CONDUCT.md).
+
 ## License
+[MIT](/LICENSE) © [Techiediaries](mailto:techiediaries9@gmail.com)
 
-MIT © [Techiediaries](mailto:techiediaries9@gmail.com)
+## Troubleshoots
 
+With Angular CLI 8.X.X you should add this lines to polyfills.ts
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+```typescript
+// Needed by Buffer needed by QRCode
+// tslint:disable-next-line:no-string-literal
+(window as any)['global'] = window;
+```
