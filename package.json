@@ -1,6 +1,6 @@
 {
-  "name": "ngx-qrcode2",
-  "version": "9.0.0",
+  "name": "@techiediaries/ngx-qrcode",
+  "version": "9.0.1",
   "scripts": {
     "ng": "ng",
     "start": "ng serve ngx-qrcode-demo",
@@ -15,7 +15,7 @@
     "lib:package": "yarn build && yarn copy:readme",
     "prelib:publish": "yarn lib:package",
     "lib:publish": "cd ./dist/ngx-qrcode && yarn publish --access=public",
-    "tags": "yarn tag list ngx-qrcode2"
+    "tags": "yarn tag list @techiediaries/ngx-qrcode"
   },
   "repository": {
     "type": "git",

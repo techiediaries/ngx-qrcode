@@ -4,7 +4,7 @@
     "outDir": "../../out-tsc/app",
     "types": [],
     "paths": {
-      "ngx-qrcode2": [
+      "@techiediaries/ngx-qrcode": [
         "projects/ngx-qrcode/src/public-api.ts"
       ]
     }

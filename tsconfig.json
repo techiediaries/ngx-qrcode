@@ -16,7 +16,7 @@
       "dom"
     ],
     "paths": {
-      "ngx-qrcode2": [
+      "@techiediaries/ngx-qrcode": [
         "dist/ngx-qrcode"
       ]
     }
