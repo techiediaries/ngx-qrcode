@@ -7,8 +7,7 @@ import { DEFAULT_VALUES } from './qrcode.constants';
 
 @Component({
   selector: 'ngx-qrcode',
-  template: `
-    <div #qrcElement [class]="cssClass"></div>`,
+  template: `<div #qrcElement [class]="cssClass"></div>`,
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class QrcodeComponent implements OnChanges {
@@ -18,7 +17,6 @@ export class QrcodeComponent implements OnChanges {
   @Input() alt: string;
   @Input() value = DEFAULT_VALUES.value;
   @Input() version = DEFAULT_VALUES.version;
-
   @Input() errorCorrectionLevel = DEFAULT_VALUES.errorCorrectionLevel;
   @Input() margin = DEFAULT_VALUES.margin;
   @Input() scale = DEFAULT_VALUES.scale;
