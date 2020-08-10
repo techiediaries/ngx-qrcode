@@ -13,19 +13,39 @@
     "email": "techiediaries9@gmail.com"
   },
   "keywords": [
+    "ng",
+    "ngx",
+    "ngx-qrcode",
+    "qrcode",
     "angular",
-    "qrcode"
+    "angular2",
+    "angular 2",
+    "angular4",
+    "angular 4",
+    "angular5",
+    "angular 5",
+    "angular6",
+    "angular 6",
+    "angular7",
+    "angular 7",
+    "angular8",
+    "angular 8",
+    "angular9",
+    "angular 9"
   ],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/techiediaries/ngx-qrcode/issues"
   },
   "dependencies": {
-    "qrcode": "^1.4.4"
+    "qrcode": "^1.4.4",
+    "tslib": "^1.10.0"
   },
   "peerDependencies": {
     "@angular/common": ">=6.0.0 || <=10.0.0",
-    "@angular/core": ">=6.0.0 || <=10.0.0",
-    "tslib": "^1.10.0"
+    "@angular/core": ">=6.0.0 || <=10.0.0"
+  },
+  "engines": {
+    "node": ">=10.0.0"
   }
 }
