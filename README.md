@@ -20,6 +20,78 @@ or
 $ yarn add @techiediaries/ngx-qrcode
 ```
 
+## Supported Options
+
+This library is a wrapper over the _[qrcode](https://github.com/soldair/node-qrcode#installation)_ library and does provide a way to configure the supported options using inputs.
+
+```ts
+@Input() elementType = DEFAULT_VALUES.elementType;
+@Input() cssClass = DEFAULT_VALUES.cssClass;
+@Input() alt: string;
+@Input() value = DEFAULT_VALUES.value;
+@Input() version = DEFAULT_VALUES.version;
+@Input() errorCorrectionLevel = DEFAULT_VALUES.errorCorrectionLevel;
+@Input() margin = DEFAULT_VALUES.margin;
+@Input() scale = DEFAULT_VALUES.scale;
+@Input() width = DEFAULT_VALUES.width;
+@Input() colorDark = DEFAULT_VALUES.colorDark;
+@Input() colorLight = DEFAULT_VALUES.colorLight;
+```
+
+Below is a list of the commonly required and supported options along with a brief description<br>
+Refer to the [Render Options (from qrcode)](https://github.com/soldair/node-qrcode#renderers-options) to read about these options in detail.
+
+### `elementType`
+
+- Supported Values:
+  - IMG
+  - URL (default)
+  - CANVAS
+
+The Element types are specified in the `NgxQrcodeElementTypes`.
+You need to import the same from `@techiediaries/ngx-qrcode`.
+
+```ts
+  import { NgxQrcodeElementTypes } from '@techiediaries/ngx-qrcode';
+```
+
+### `cssClass`
+
+- Type: `string`
+- Default: `qrcode`
+   
+This is the class given to the `div` that holds the `qr` image.<br>
+The same can be used to apply style to the `img` tag contained in the `div`.
+
+### `value`
+
+- Default: `https://www.techiediaries.com`
+
+The value that needs to be encoded in the QRCode format.
+
+### `margin`
+
+- Type: `Number`
+- Default: 4
+
+Defines the width of the white space(aka quiet zone) around a QRCode.
+
+### `scale`
+
+- Type: `Number`
+- Default: 4
+
+Scale factor. A value of `1` means 1px per module (black/white dot).
+
+### `width`
+
+- Type: `Number`
+- Default: 10
+
+Forces a specific width for the output image.<br>
+If width is too small to contain the qr symbol, this option will be ignored.<br>
+Takes precedence over `scale`.
+
 ## How to use @techiediaries/ngx-qrcode?
 
 For a complete and detailed tutorial on how to use this library. See:
@@ -50,7 +122,6 @@ import { AppComponent } from './app.component';
 })
 export class AppModule { }
 ```
-
 
 Once the library has been imported, you can use the ngx-qrcode component in your Angular application.
 
@@ -99,7 +170,6 @@ To generate all `*.js`, `*.d.ts` and `*.metadata.json` files:
 $ npm run build
 or
 $ yarn build
-
 ```
 
 To lint all `*.ts` files:
