@@ -1,3 +1,20 @@
+# 13.0.0 (2022-05-31)
+
+
+### Build System
+
+* **release:** update to angular 13 ([8ab439a](https://github.com/techiediaries/ngx-qrcode/commit/8ab439a8ed815c01293855eff86072af10460a7d))
+
+
+### BREAKING CHANGES
+
+* **lib:** support for angular v13
+* Replace tslint with eslint
+* Change protractor to cypress
+* Update third party libraries
+* Update node lts version
+
+
 # [9.1.0](https://github.com/techiediaries/ngx-qrcode/compare/9.0.0...9.1.0) (2020-08-11)
 
 

@@ -7,10 +7,10 @@
       "projectType": "library",
       "root": "projects/ngx-qrcode",
       "sourceRoot": "projects/ngx-qrcode/src",
-      "prefix": "lib",
+      "prefix": "ngx",
       "architect": {
         "build": {
-          "builder": "@angular-devkit/build-ng-packagr:build",
+          "builder": "@angular-devkit/build-angular:ng-packagr",
           "options": {
             "tsConfig": "projects/ngx-qrcode/tsconfig.lib.json",
             "project": "projects/ngx-qrcode/ng-package.json"
@@ -18,8 +18,10 @@
           "configurations": {
             "production": {
               "tsConfig": "projects/ngx-qrcode/tsconfig.lib.prod.json"
-            }
-          }
+            },
+            "development": {}
+          },
+          "defaultConfiguration": "production"
         },
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
@@ -30,14 +32,11 @@
           }
         },
         "lint": {
-          "builder": "@angular-devkit/build-angular:tslint",
+          "builder": "@angular-eslint/builder:lint",
           "options": {
-            "tsConfig": [
-              "projects/ngx-qrcode/tsconfig.lib.json",
-              "projects/ngx-qrcode/tsconfig.spec.json"
-            ],
-            "exclude": [
-              "**/node_modules/**"
+            "lintFilePatterns": [
+              "projects/ngx-qrcode/**/*.ts",
+              "projects/ngx-qrcode/**/*.html"
             ]
           }
         }
@@ -62,7 +61,6 @@
             "main": "projects/ngx-qrcode-demo/src/main.ts",
             "polyfills": "projects/ngx-qrcode-demo/src/polyfills.ts",
             "tsConfig": "projects/ngx-qrcode-demo/tsconfig.app.json",
-            "aot": true,
             "assets": [
               "projects/ngx-qrcode-demo/src/favicon.ico",
               "projects/ngx-qrcode-demo/src/assets"
@@ -70,7 +68,16 @@
             "styles": [
               "projects/ngx-qrcode-demo/src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [],
+            "vendorChunk": true,
+            "extractLicenses": false,
+            "buildOptimizer": false,
+            "sourceMap": true,
+            "optimization": false,
+            "namedChunks": true,
+            "allowedCommonJsDependencies": [
+              "qrcode"
+            ]
           },
           "configurations": {
             "production": {
@@ -83,7 +90,6 @@
               "optimization": true,
               "outputHashing": "all",
               "sourceMap": false,
-              "extractCss": true,
               "namedChunks": false,
               "extractLicenses": true,
               "vendorChunk": false,
@@ -100,19 +106,23 @@
                   "maximumError": "10kb"
                 }
               ]
-            }
-          }
+            },
+            "development": {}
+          },
+          "defaultConfiguration": "production"
         },
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
-          "options": {
-            "browserTarget": "ngx-qrcode-demo:build"
-          },
+          "options": {},
           "configurations": {
             "production": {
               "browserTarget": "ngx-qrcode-demo:build:production"
+            },
+            "development": {
+              "browserTarget": "ngx-qrcode-demo:build:development"
             }
-          }
+          },
+          "defaultConfiguration": "development"
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
@@ -137,35 +147,33 @@
             "scripts": []
           }
         },
-        "lint": {
-          "builder": "@angular-devkit/build-angular:tslint",
-          "options": {
-            "tsConfig": [
-              "projects/ngx-qrcode-demo/tsconfig.app.json",
-              "projects/ngx-qrcode-demo/tsconfig.spec.json",
-              "projects/ngx-qrcode-demo/e2e/tsconfig.json"
-            ],
-            "exclude": [
-              "**/node_modules/**"
-            ]
-          }
-        },
         "e2e": {
-          "builder": "@angular-devkit/build-angular:protractor",
+          "builder": "@cypress/schematic:cypress",
           "options": {
-            "protractorConfig": "projects/ngx-qrcode-demo/e2e/protractor.conf.js",
-            "devServerTarget": "ngx-qrcode-demo:serve"
+            "devServerTarget": "ngx-qrcode-demo:serve",
+            "configFile": "projects/ngx-qrcode-demo/e2e/cypress.json"
           },
           "configurations": {
             "production": {
               "devServerTarget": "ngx-qrcode-demo:serve:production"
             }
           }
+        },
+        "lint": {
+          "builder": "@angular-eslint/builder:lint",
+          "options": {
+            "lintFilePatterns": [
+              "projects/ngx-qrcode-demo/**/*.ts",
+              "projects/ngx-qrcode-demo/**/*.html"
+            ]
+          }
         }
       }
-    }},
+    }
+  },
   "cli": {
-    "analytics": "3cbdf0e5-4793-407d-9c3d-8769136e76cf"
+    "analytics": "3cbdf0e5-4793-407d-9c3d-8769136e76cf",
+    "defaultCollection": "@angular-eslint/schematics"
   },
   "defaultProject": "ngx-qrcode"
 }
