@@ -10,6 +10,10 @@ You can use the `@techiediaries/ngx-qrcode` to easily generate QR codes inside y
 
 >QR code (abbreviated from Quick Response Code) is the trademark for a type of matrix barcode (or two-dimensional barcode) first designed for the automotive industry in Japan. A barcode is a machine-readable optical label that contains information about the item to which it is attached. A QR code uses four standardized encoding modes (numeric, alphanumeric, byte/binary, and kanji) to efficiently store data; extensions may also be used. [Source](https://en.wikipedia.org/wiki/QR_code)
 
+
+> Note: Make sure to check [10xdev.space](https://10xdev.space/) for career growth, money making tips and learning paths for developers.
+
+
 ## How to install @techiediaries/ngx-qrcode?
 
 To use ngx-qrcode in your project, install it via npm or yarn:
